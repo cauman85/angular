@@ -13,7 +13,7 @@
 1. In the top of the **ngOnInit** block, create an interval timer, where every 2 seconds, you update the **titleCounter** by one. After 6 seconds cancel the interval.
 
    ```javascript
-   const interval = setInterval(() => this.titleCounter++, 2000);
+   const interval = setInterval(() => this.titleCounter++, 1000);
 
    setTimeout(() => clearInterval(interval), 6000);
    ```
