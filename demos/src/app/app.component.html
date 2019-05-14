@@ -1,66 +1,7 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center;">
-  <h1 class="jumbotron my-5 mx-5">
-    Welcome to {{ title }}!
-  </h1>
-  <p><b>Featured Albums: {{ numbers }}</b></p>
-  <p><b>**Albums Title #{{titleCounter }}**</b></p>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<div class="container-fluid">
-  <div class="card-deck">
-    <div class="card">
-      <img class="card-img-top cover"
-      src="assets/img/{{ albumsArray[0].id }}.jpg" alt="{{ albumsArray[0].albumName }}"
-      style="border: 1px solid grey"/>
-      <div class="card-body">
-          <h5 class="card-title">{{ albumsArray[0].artist }}</h5>
-          <div class="scrollable">
-            <h6 class="card-title">{{ albumsArray[0].album_name }}</h6>
-            <h6 class="card-text">Released: {{ albumsArray[0].release_date }}</h6>
-            <h6>{{ albumsArray[0].price }} {{ albumsArray[0].currency }}</h6>
-          </div>
-        </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top cover"
-      src="assets/img/{{ albumsArray[1].id }}.jpg" alt="{{ albumsArray[1].albumName }}"
-      style="border: 1px solid grey"/>
-      <div class="card-body">
-          <h5 class="card-title">{{ albumsArray[1].artist }}</h5>
-          <div class="scrollable">
-            <h6 class="card-title">{{ albumsArray[1].album_name }}</h6>
-            <h6 class="card-text">Released: {{ albumsArray[1].release_date }}</h6>
-            <h6>{{ albumsArray[1].price }} {{ albumsArray[1].currency }}</h6>
-          </div>
-        </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top cover"
-      src="assets/img/{{ albumsArray[2].id }}.jpg" alt="{{ albumsArray[2].albumName }}"
-      style="border: 1px solid grey"/>
-      <div class="card-body">
-          <h5 class="card-title">{{ albumsArray[2].artist }}</h5>
-          <div class="scrollable">
-            <h6 class="card-title">{{ albumsArray[2].album_name }}</h6>
-            <h6 class="card-text">Released: {{ albumsArray[2].release_date }}</h6>
-            <h6>{{ albumsArray[2].price }} {{ albumsArray[2].currency }}</h6>
-          </div>
-        </div>
-    </div>
+    <h1 class="jumbotron my-5 mx-5">Welcome to {{ title }}!</h1>
   </div>
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+  <app-album-list></app-album-list>
+
+  <router-outlet></router-outlet>
