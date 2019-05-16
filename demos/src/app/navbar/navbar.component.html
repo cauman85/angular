@@ -36,6 +36,18 @@
         routerLinkActive="active"
         >View Albums</a
       >
+      <a
+        class="nav-item nav-link"
+        routerLink="/album-add"
+        routerLinkActive="active"
+        >Add Album</a
+      >
+      <a
+        routerLinkActive="active"
+        routerLink="/login"
+        class="nav-item nav-link"
+        (click)="loginOrOut()"
+        >{{ loginLogoutText }}</a>
     </div>
   </div>
 </nav>

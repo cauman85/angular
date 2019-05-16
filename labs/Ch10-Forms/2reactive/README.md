@@ -4,7 +4,7 @@
 
 - Add an authentication service
 - Create a login form
-- Update Display when user is logged in
+- Update Display when user is logged in 
 
 ## Steps
 
