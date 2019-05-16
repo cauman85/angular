@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <img
+      *ngIf="albums"
+      class="float-right img-fluid"
+      src="assets/img/{{ albums.id }}.jpg"
+      alt="{{ albums?.albumName }}"
+    />
+
+    <ul style="list-style: none;">
+      <li>
+        <h2>{{ albums?.albumName }}</h2>
+      </li>
+      <li>{{ albums?.artist }}</li>
+      <li>Year Released: {{ albums?.year }}</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <h4>Tracks</h4>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Duration</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="albums">
+        <tr *ngFor="let track of albums.tracks">
+          <th scope="row">{{ track.trackNumber }}</th>
+          <td>{{ track.title }}</td>
+          <td>{{ track.length }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
